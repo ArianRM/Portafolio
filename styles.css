@@ -94,3 +94,67 @@ a:visited{
     font-weight: bold;
     transition: 400ms ease all;
 }
+
+.about-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 11em;
+    margin: 5em 0; 
+}
+
+.about-me h2{
+    font-size: 5em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about-me img{
+    width: 300px;
+    box-shadow: 8px 8px 0px 0px rgba(255,255,255,1);
+}
+
+.about-me p{
+    margin: 0 3em;
+    font-size: 2em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.skills-header{
+    display: flex;
+    place-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 2em;
+}
+
+.skills{
+    margin: 5em 0; 
+}
+
+.skills-header h2{
+    font-size: 5em;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+.skills-header p{
+    font-size: 2em;
+    text-align: right;
+    font-weight: bold;
+    
+}
+
+.skills-logos{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 150px 150px;
+    gap: 2em;
+}
+
+.skills-logos img{
+    width: 150px;
+    height: 150px;
+}
