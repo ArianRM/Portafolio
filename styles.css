@@ -246,6 +246,8 @@ input{
     color: #fff;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
+    font-weight: bold;
+
 }
 
 textarea{
@@ -257,6 +259,7 @@ textarea{
     color: #fff;
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
+    font-weight: bold;
 }
 
 button{
