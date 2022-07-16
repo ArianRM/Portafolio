@@ -29,6 +29,11 @@ body{
     font-size: 1.5em;
     list-style-type: none;
     padding: 5px 10px;
+    transition: transform 200ms;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.5);
 }
 
 a{
@@ -78,6 +83,11 @@ a:visited{
 
 .social-medias img{
     margin: 0 1em;
+    transition: transform 200ms;
+}
+
+.social-medias img:hover{
+    transform: scale(1.2);
 }
 
 #cv-button{
@@ -86,13 +96,14 @@ a:visited{
     padding: 5px 20px;
     margin: 0.5em 0;
     border: 3px solid #fff;
+    transition: transform 200ms;
 }
 
 #cv-button:hover{
     background: #fff;
     color: #000;
     font-weight: bold;
-    transition: 400ms ease all;
+    transform: scale(1.2);
 }
 
 .about-me{
@@ -131,6 +142,7 @@ a:visited{
 
 .skills{
     margin: 5em 0; 
+    width: 100%;
 }
 
 .skills-header h2{
@@ -157,4 +169,151 @@ a:visited{
 .skills-logos img{
     width: 150px;
     height: 150px;
+}
+
+.projects{
+    width: 100%;
+    margin: 5em 0; 
+}
+
+.projects-header{
+    display: flex;
+    place-content: center;
+    margin-bottom: 2em;
+}
+
+.projects-header h2{
+    font-size: 5em;
+    font-style: italic;
+    margin-right: 1em;
+}
+
+.projects-header p{
+    font-size: 2em;
+    text-align: left;
+    font-weight: bold;   
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    background: azure;
+    color: #000;
+}
+
+.projects-visualizer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 250px 250px;
+    gap: 2em;
+}
+
+.contact-form{
+    width: 100%;
+    margin: 5em 0 1em 0; 
+    display: grid;
+    place-content: center;
+}
+
+.form-header h2{
+    font-size: 5em;
+    font-style: italic;
+    text-align: center;
+}
+
+.form-header p{
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em auto 1em auto; 
+    width: 600px;
+}
+
+input{
+    height: 50px;
+    background: none;
+    border: 0.3em solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+
+textarea{
+    background: none;
+    height: 150px;
+    border: 0.3em solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+::placeholder{
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+
+#break-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-social-medias{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0; 
+    
+}
+
+.form-social-medias img{
+    margin: 0 10px;
+    transition: transform 200ms;
+    width: 40px;
+    height: 40px;
+}
+
+.form-social-medias img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
